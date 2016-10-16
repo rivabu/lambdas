@@ -1,6 +1,8 @@
-package simple;
+package streams;
 
 import org.junit.Test;
+
+import streams.SimpleTest;
 
 public class SimpleTestTest {
 
