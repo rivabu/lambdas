@@ -2,13 +2,15 @@ package domain;
 
 public class Track {
 
+
 	public Track(int length, String name) {
 		super();
 		this.length = length;
 		this.name = name;
 	}
-	private int length;
-	private String name;
+	int length;
+	String name;
+	
 	public int getLength() {
 		return length;
 	}
@@ -21,8 +23,4 @@ public class Track {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String toString() {
-		return name + " " + length;
-	}
-
 }

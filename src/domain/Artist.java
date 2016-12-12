@@ -1,37 +1,40 @@
 package domain;
 
 public class Artist {
-
-	public Artist(String name, String from, int age) {
+	public Artist(String name, String city, int age, String nationality) {
 		super();
-		this.setName(name);
-		this.from = from;
-		this.setAge(age);
+		this.name = name;
+		this.city = city;
+		this.age = age;
+		this.nationality = nationality;
 	}
 
-	private String from;
-	private String name;
-	private int age;
-
-	public String getFrom() {
-		return from;
-	}
-
-	public void setFrom(String from) {
-		this.from = from;
-	}
 	
-	public boolean isFrom(String from) {
-		return this.from.equals(from);
-	}
+
+	private String name;
+	private String city;
+	private int age;
+	private String nationality;
 
 	public String getName() {
 		return name;
 	}
 
-	public String setName(String name) {
+	public void setName(String name) {
 		this.name = name;
-		return name;
+	}
+
+	public boolean isFrom(String string) {
+		// TODO Auto-generated method stub
+		return string.equals(city);
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
 	}
 
 	public int getAge() {
@@ -41,8 +44,14 @@ public class Artist {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
-	public String toString() {
-		return name + " " + from  + " " + age;
+
+	public String getNationality() {
+		return nationality;
 	}
+
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
+	}
+
+
 }
