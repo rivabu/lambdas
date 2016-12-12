@@ -1,15 +1,17 @@
 package streams;
 
+import static java.util.stream.Collectors.toList;
+
 import java.util.List;
 
-import domain.Album;
-import domain.AlbumBuilder;
 import org.junit.Assert;
+
+import domain.Album;
 
 public class RemoveIf {
 	public static void main(String args[]) {
 
-		List<Album> albums = AlbumBuilder.getAlbums();
+		List<Album> albums = Album.getAlbums().collect(toList());
 		Assert.assertEquals(3, albums.get(0).getTrackList().size());
 
 		System.out.println(albums.get(0).getTrackList());
